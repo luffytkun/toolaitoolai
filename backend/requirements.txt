@@ -1,0 +1,16 @@
+# FastAPI + uvicorn
+fastapi==0.115.0
+uvicorn[standard]==0.30.6
+python-multipart==0.0.12
+
+# MiMo / OpenAI-compatible client
+openai==1.54.0
+
+# PDF extraction
+pymupdf==1.25.2
+
+# Vector DB
+chromadb==0.5.5
+
+# Utils
+python-dotenv==1.0.1

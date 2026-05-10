@@ -1,0 +1,15 @@
+services:
+  backend:
+    build: .
+    port: 8000
+    environment:
+      - MIMO_API_KEY=${MIMO_API_KEY}
+      - MIMO_BASE_URL=https://api.xiaomimimo.com/v1
+      - MIMO_MODEL=mimo-pro
+      - MIMO_EMBED_MODEL=text-embedding
+      - CHROMA_PERSIST_DIR=/data
+    volumes:
+      - chroma_data:/data
+
+volumes:
+  chroma_data:
